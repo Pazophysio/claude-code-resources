@@ -156,171 +156,12 @@
 
   <!-- ===== Hero ===== -->
   <section class="hero">
-    <div class="hero-code-bg">
-      <div class="hero-code-strip hero-code-strip--left">
-        <div class="code-inner">> 我有一個 Excel 檔案，裡面有三千多筆客戶資料，幫我清除重複的、按照地區分類，然後匯出成三個 CSV
-          # Reading 客戶資料.xlsx — 3,847 rows, 12 columns detected
-          # Scanning for duplicates based on email + phone...
-          # Found 23 duplicate entries, removing...
-          ✓ Cleaned: 3,824 unique records
-          # Grouping by region column — 北部、中部、南部、東部
-          ✓ 北部.csv — 1,204 rows saved
-          ✓ 中部.csv — 892 rows saved
-          ✓ 南部.csv — 1,128 rows saved
-          ✓ 東部.csv — 600 rows saved
-
-          > 我想要每天早上自動收到一封信，裡面是昨天的工作摘要，從我的日記檔案裡面抓
-          # Reading CLAUDE.md for journal structure...
-          # Found journal pattern: journals/YYYY-MM-DD.md
-          # Creating daily summary script with email integration
-          # Setting up cron: 每天 08:00 UTC+8
-          ✓ scripts/daily-summary.sh created
-          ✓ Email template configured — subject: 「昨日工作摘要」
-          ✓ Cron job registered: 0 8 * * *
-          ✓ Test email sent to your inbox, check it
-
-          > 幫我把這個舊網站改成 RWD，現在在手機上完全沒辦法看
-          # Analyzing current CSS — fixed widths detected
-          # Converting px to responsive units
-          # Adding viewport meta tag
-          # Restructuring grid layout for mobile
-          # Adding hamburger menu for < 768px ✓ 14 files modified ✓ Responsive breakpoints: 480px, 768px, 1024px ✓
-            Preview: localhost:3000 — try resizing> 我的 Notion 資料太多了，全部匯出成 Markdown 整理到資料夾裡
-            # Notion export detected: 847 pages, nested structure
-            # Parsing page hierarchy and backlinks
-            # Converting Notion blocks to clean Markdown
-            # Organizing by database → folder mapping
-            ✓ 847 files created in notes/
-            ✓ Folder structure mirrors Notion workspace
-            ✓ Internal links converted to [[wikilinks]]
-            ✓ Images downloaded to assets/
-
-            > 我有一個 Excel 檔案，裡面有三千多筆客戶資料，幫我清除重複的、按照地區分類，然後匯出成三個 CSV
-            # Reading 客戶資料.xlsx — 3,847 rows, 12 columns detected
-            # Scanning for duplicates based on email + phone...
-            # Found 23 duplicate entries, removing...
-            ✓ Cleaned: 3,824 unique records
-            # Grouping by region column — 北部、中部、南部、東部
-            ✓ 北部.csv — 1,204 rows saved
-            ✓ 中部.csv — 892 rows saved
-            ✓ 南部.csv — 1,128 rows saved
-            ✓ 東部.csv — 600 rows saved
-
-            > 我想要每天早上自動收到一封信，裡面是昨天的工作摘要，從我的日記檔案裡面抓
-            # Reading CLAUDE.md for journal structure...
-            # Found journal pattern: journals/YYYY-MM-DD.md
-            # Creating daily summary script with email integration
-            # Setting up cron: 每天 08:00 UTC+8
-            ✓ scripts/daily-summary.sh created
-            ✓ Email template configured — subject: 「昨日工作摘要」
-            ✓ Cron job registered: 0 8 * * *
-            ✓ Test email sent to your inbox, check it
-
-            > 幫我把這個舊網站改成 RWD，現在在手機上完全沒辦法看
-            # Analyzing current CSS — fixed widths detected
-            # Converting px to responsive units
-            # Adding viewport meta tag
-            # Restructuring grid layout for mobile
-            # Adding hamburger menu for < 768px ✓ 14 files modified ✓ Responsive breakpoints: 480px, 768px, 1024px ✓
-              Preview: localhost:3000 — try resizing</div>
-        </div>
-        <div class="hero-code-strip hero-code-strip--right">
-          <div class="code-inner">$ claude
-            ╭────────────────────────────────────────────────╮
-            │ ✓ Claude Code — ~/project │
-            ╰────────────────────────────────────────────────╯
-
-            > 我想做一個個人網站，要有首頁、關於我、作品集，風格要簡潔、用米色和橘色配色
-            # Got it. Let me scaffold the project structure first.
-            # Creating index.html, about.html, portfolio.html
-            # Applying color scheme: beige (#F4EBE1) + orange (#DA7B4A)
-            # Setting up responsive navigation
-            # Adding smooth scroll and page transitions
-            ✓ 3 pages created with shared header/footer
-            ✓ CSS variables configured for brand colors
-            ✓ Mobile nav with hamburger menu
-            ✓ Preview ready at localhost:3000
-
-            > 把上週會議的錄音檔轉成逐字稿，然後整理成會議紀錄格式，標出待辦事項
-            # Processing: meeting-2026-03-21.m4a (47 minutes)
-            # Transcribing with Whisper — language: zh-TW
-            # Identifying speakers: 3 participants detected
-            # Extracting action items and decisions
-            ✓ Transcript: meeting-transcript.md (8,240 words)
-            ✓ Summary: meeting-notes.md — 12 key decisions
-            ✓ Action items: 7 tasks extracted with assignees
-            ✓ Follow-up reminders set for next Monday
-
-            > 幫我寫一封給客戶的提案信，我們是做數位行銷的，這個客戶是一家中型電商，主要賣健康食品
-            # Loading brand voice from CLAUDE.md...
-            # Analyzing client profile: mid-size e-commerce, health foods
-            # Drafting proposal with industry benchmarks
-            ✓ Draft: proposal-healthfood.md
-            ✓ Structure: 痛點分析 → 服務內容 → 案例 → 報價 → 時程
-            ✓ Tone: professional but approachable
-            ✓ 3 subject line options included
-            Want me to adjust the tone or add more case studies?
-
-            > 我有五十張產品照片，幫我全部壓縮到 200KB 以下，然後改名成 product-001 到 product-050
-            # Scanning ~/photos — 50 images found (JPG + PNG)
-            # Average size: 4.2MB — target:
-            < 200KB each # Compressing with quality optimization # Renaming sequentially: product-001.jpg ... ✓ 50
-              images compressed — avg: 178KB (-95.8%) ✓ Renamed: product-001.jpg to product-050.jpg ✓ Originals backed
-              up to ~/photos/originals /> 我的部落格文章想要做 SEO 優化，幫我分析前五篇文章的問題，然後給我改善建議
-            # Crawling blog pages — 5 posts found
-            # Checking: meta tags, headings, keyword density, internal links, image alt text, page speed
-            # Comparing against top-ranking competitors
-            ✓ Analysis complete — report: seo-audit.md
-            Post 1: missing meta description, no H2 structure
-            Post 2: keyword stuffing in first paragraph
-            Post 3: good structure, needs internal links
-            Post 4: images missing alt text (6 images)
-            Post 5: title too long (78 chars, recommend < 60) ✓ Rewrote 5 meta descriptions — ready for review $ claude
-              ╭────────────────────────────────────────────────╮ │ ✓ Claude Code — ~/project │
-              ╰────────────────────────────────────────────────╯> 我想做一個個人網站，要有首頁、關於我、作品集，風格要簡潔、用米色和橘色配色
-              # Got it. Let me scaffold the project structure first.
-              # Creating index.html, about.html, portfolio.html
-              # Applying color scheme: beige (#F4EBE1) + orange (#DA7B4A)
-              # Setting up responsive navigation
-              # Adding smooth scroll and page transitions
-              ✓ 3 pages created with shared header/footer
-              ✓ CSS variables configured for brand colors
-              ✓ Mobile nav with hamburger menu
-              ✓ Preview ready at localhost:3000
-
-              > 把上週會議的錄音檔轉成逐字稿，然後整理成會議紀錄格式，標出待辦事項
-              # Processing: meeting-2026-03-21.m4a (47 minutes)
-              # Transcribing with Whisper — language: zh-TW
-              # Identifying speakers: 3 participants detected
-              # Extracting action items and decisions
-              ✓ Transcript: meeting-transcript.md (8,240 words)
-              ✓ Summary: meeting-notes.md — 12 key decisions
-              ✓ Action items: 7 tasks extracted with assignees
-              ✓ Follow-up reminders set for next Monday
-
-              > 幫我寫一封給客戶的提案信，我們是做數位行銷的，這個客戶是一家中型電商，主要賣健康食品
-              # Loading brand voice from CLAUDE.md...
-              # Analyzing client profile: mid-size e-commerce, health foods
-              # Drafting proposal with industry benchmarks
-              ✓ Draft: proposal-healthfood.md
-              ✓ Structure: 痛點分析 → 服務內容 → 案例 → 報價 → 時程
-              ✓ Tone: professional but approachable
-              ✓ 3 subject line options included
-              Want me to adjust the tone or add more case studies?
-
-              > 我有五十張產品照片，幫我全部壓縮到 200KB 以下，然後改名成 product-001 到 product-050
-              # Scanning ~/photos — 50 images found (JPG + PNG)
-              # Average size: 4.2MB — target: < 200KB each # Compressing with quality optimization # Renaming
-                sequentially: product-001.jpg ... ✓ 50 images compressed — avg: 178KB (-95.8%) ✓ Renamed:
-                product-001.jpg to product-050.jpg ✓ Originals backed up to ~/photos/originals/</div>
-          </div>
-        </div>
         <div class="hero-inner">
           <div class="hero-text">
-            <h1>用 Claude Code、Codex<br>打造你的<br><span class="highlight"><span class="prompt-caret">&gt;</span> AI 個人助理<span
+            <h1><span class="hero-h1-line">用 <span class="h1-logo h1-logo--claude"><img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/claude.svg" alt="Claude"></span>Claude Code <br class="hero-h1-mobile-br"><span class="h1-logo h1-logo--codex"><img src="https://unpkg.com/@lobehub/icons-static-svg@latest/icons/codex-color.svg" alt="Codex"></span>Codex</span><br><span class="highlight"><span class="prompt-caret">&gt;</span> 打造你的 AI 個人助理<span
                   class="t-cursor"></span></span></h1>
 
-            <p class="hero-sub">免費教學 + 精選資源整理，小白也能快速上手<br>10+ 篇系列文帶你從入門到自動化<br>（持續更新中）</p>
+            <p class="hero-sub">免費教學 + 精選資源整理，小白也能快速上手<br>10+ 篇系列文帶你從入門到自動化（持續更新中）</p>
 
             <div class="hero-actions">
               <a href="#resources" class="hero-btn-primary" data-track-cta="hero-primary">開始學習 →</a>
@@ -340,20 +181,17 @@
               <div class="terminal-dot terminal-dot--red"></div>
               <div class="terminal-dot terminal-dot--yellow"></div>
               <div class="terminal-dot terminal-dot--green"></div>
-              <div class="terminal-title">claude — ~/project</div>
+              <div class="terminal-title">raymondhouch.com</div>
             </div>
             <div class="terminal-body">
 
               <br>
-              <div><span class="t-dim">╭──────────────────────────╮</span></div>
-              <div><span class="t-dim">│</span> <span class="t-success">✓</span> <span class="t-cmd">Claude Code</span>
-                <span class="t-dim">│</span>
-              </div>
-              <div><span class="t-dim">╰──────────────────────────╯</span></div>
+              <div><span class="t-dim">╭─────────────────╮ ╭───────────╮</span></div>
+              <div><span class="t-dim">│</span> <span class="t-success">✓</span> <span class="t-cmd">Claude Code</span> <span class="t-dim">│ │</span> <span class="t-success">✓</span> <span class="t-cmd">Codex</span> <span class="t-dim">│</span></div>
+              <div><span class="t-dim">╰─────────────────╯ ╰───────────╯</span></div>
               <br>
               <div><span class="t-prompt">&gt;</span> <span class="t-cmd">幫我建一個自動化日記系統</span></div>
               <br>
-              <div><span class="t-comment"># 正在讀取 CLAUDE.md...</span></div>
               <div><span class="t-comment"># 載入 /journal skill...</span></div>
               <div><span class="t-success">✓</span> <span class="t-dim">已建立 journals/2026-03-28.md</span></div>
               <div><span class="t-success">✓</span> <span class="t-dim">已設定 Time Log 格式</span></div>
