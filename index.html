@@ -185,11 +185,10 @@
             </div>
             <div class="terminal-body">
 
-              <br>
-              <div><span class="t-dim">╭─────────────────╮ ╭───────────╮</span></div>
-              <div><span class="t-dim">│</span> <span class="t-success">✓</span> <span class="t-cmd">Claude Code</span> <span class="t-dim">│ │</span> <span class="t-success">✓</span> <span class="t-cmd">Codex</span> <span class="t-dim">│</span></div>
-              <div><span class="t-dim">╰─────────────────╯ ╰───────────╯</span></div>
-              <br>
+              <div style="display:flex; gap:10px; margin:12px 0 14px;">
+                <span style="border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:4px 14px; display:inline-flex; align-items:center; gap:6px;"><span class="t-success">✓</span> <span class="t-cmd">Claude Code</span></span>
+                <span style="border:1px solid rgba(255,255,255,0.2); border-radius:4px; padding:4px 14px; display:inline-flex; align-items:center; gap:6px;"><span class="t-success">✓</span> <span class="t-cmd">Codex</span></span>
+              </div>
               <div><span class="t-prompt">&gt;</span> <span class="t-cmd">幫我建一個自動化日記系統</span></div>
               <br>
               <div><span class="t-comment"># 載入 /journal skill...</span></div>
@@ -1195,21 +1194,12 @@
 
         <!-- Waitlist -->
         <div id="waitlist" style="text-align:center; padding:2rem 0 0;">
-          <p class="waitlist-title"><span style="color:var(--orange); font-size:1.15em;">4350+</span> 人購買學習，超值優惠倒數中<br>10+ 系列教學內容＆資源設定包</p>
+          <p class="waitlist-title"><span style="color:var(--orange); font-size:1.15em;">4500+</span> 人購買學習<br>10+ 系列教學內容＆資源設定包</p>
           <p style="font-size:1rem; color:var(--text-secondary); margin-bottom:1.5rem; line-height:1.8;">想要更系統性的學習？<br>怎麼讓 AI 更懂你？建立個人化 AI 分身和知識庫？<br>雷蒙的實戰案例拆解、多 Agent-Team 協作方法？</p>
           <a href="https://lifehacker.tw/courses/24hr-claude-code-tutorial?affcode=cc-resources&utm_source=cc-resources&utm_medium=website&utm_campaign=mini-course-preorder&utm_content=waitlist-hero" class="waitlist-hero" target="_blank" rel="noopener" data-track-cta="waitlist-hero">
             <img src="images/claude-code-package.jpg" alt="Claude Code 迷你課" loading="lazy">
             <span class="waitlist-hero-shine"></span>
           </a>
-          <div class="waitlist-countdown">
-            <div class="wl-cd-item"><span class="wl-cd-num" data-cd="days">00</span><span class="wl-cd-unit">天</span></div>
-            <div class="wl-cd-sep">:</div>
-            <div class="wl-cd-item"><span class="wl-cd-num" data-cd="hours">00</span><span class="wl-cd-unit">時</span></div>
-            <div class="wl-cd-sep">:</div>
-            <div class="wl-cd-item"><span class="wl-cd-num" data-cd="mins">00</span><span class="wl-cd-unit">分</span></div>
-            <div class="wl-cd-sep">:</div>
-            <div class="wl-cd-item"><span class="wl-cd-num" data-cd="secs">00</span><span class="wl-cd-unit">秒</span></div>
-          </div>
           <a href="https://lifehacker.tw/courses/24hr-claude-code-tutorial?affcode=cc-resources&utm_source=cc-resources&utm_medium=website&utm_campaign=mini-course-preorder&utm_content=waitlist-button" class="waitlist-cta" target="_blank" rel="noopener" data-track-cta="waitlist-button">觀看課程</a>
         </div>
       </div>
@@ -1330,8 +1320,8 @@
         </div>
         <div class="bonus-c">
           <div class="b-badge">Live Q&A</div>
-          <div class="b-title">1 小時 QA 直播問答（日期待定）</div>
-          <div class="b-desc">購買後可參加一場線上直播。帶著你的問題來，我們現場回答、現場 demo。不是預錄影片，是真人即時互動。</div>
+          <div class="b-title"><a href="https://lifehacker.tw/events/ai-agent-live-qa?affcode=cc-resources" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:3px;">6/13 學員直播問答</a></div>
+          <div class="b-desc">主題：怎麼讓 AI Agent 跨 Claude Code、Codex 都好用？<br>帶著你的問題來，我們現場回答、現場 demo。不是預錄影片，是真人即時互動。</div>
         </div>
       </div>
     </div>
@@ -1678,15 +1668,9 @@
     </div>
   </footer>
 
-  <!-- ===== Countdown Bar ===== -->
+  <!-- ===== Sticky CTA Bar ===== -->
   <div id="countdownBar">
-    <span class="cd-label">超值優惠倒數</span>
-    <span style="display:inline-flex; align-items:center; gap:4px;">
-      <span id="cdDays" class="cd-num">00</span><span class="cd-unit">天</span>
-      <span id="cdHours" class="cd-num">00</span><span class="cd-unit">時</span>
-      <span id="cdMins" class="cd-num">00</span><span class="cd-unit">分</span>
-      <span id="cdSecs" class="cd-num">00</span><span class="cd-unit">秒</span>
-    </span>
+    <span class="cd-label">4500+ 人已購買學習</span>
     <a href="https://lifehacker.tw/courses/24hr-claude-code-tutorial?affcode=cc-resources&utm_source=cc-resources&utm_medium=website&utm_campaign=mini-course-preorder&utm_content=countdown-bar" class="cd-cta" target="_blank" rel="noopener" data-track-cta="countdown-bar"><span>觀看課程</span></a>
   </div>
   <button id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="回到頂部">
@@ -1920,7 +1904,7 @@
     // GA4 + Meta Pixel 追蹤：銷售 CTA 點擊事件
     // 任何 <a data-track-cta="xxx"> 都會自動送出 cta_click 事件，參數 location = 屬性值
     // 銷售 CTA（連外到 checkout）→ InitiateCheckout；站內錨點 CTA → Lead
-    var CHECKOUT_CTAS = ['countdown-bar', 'waitlist-button', 'waitlist-hero'];
+    var CHECKOUT_CTAS = ['waitlist-button', 'waitlist-hero'];
     document.addEventListener('click', function (e) {
       var link = e.target.closest('[data-track-cta]');
       if (!link) return;
@@ -1971,55 +1955,6 @@
         hero.style.transform = 'perspective(1200px) rotateX(0) rotateY(0)';
         hero.style.transition = 'transform 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1)';
       });
-    })();
-
-    // Countdown timer — tiered phases (台北時間)
-    (function () {
-      // ← 修改這裡設定階段倒數（end 為該階段最後一秒，下個階段開始前）
-      var PHASES = [
-        { end: new Date('2026-05-04T23:59:59+08:00') },
-        { end: new Date('2026-05-11T23:59:59+08:00') },
-        { end: new Date('2026-05-18T23:59:59+08:00') },
-        { end: new Date('2026-05-25T23:59:59+08:00') }
-      ];
-
-      function currentTarget() {
-        var now = new Date();
-        for (var i = 0; i < PHASES.length; i++) {
-          if (PHASES[i].end - now > 0) return PHASES[i].end;
-        }
-        return null;
-      }
-
-      function tick() {
-        var target = currentTarget();
-        if (!target) {
-          document.getElementById('countdownBar').style.display = 'none';
-          return;
-        }
-        var diff = target - new Date();
-        var d = Math.floor(diff / 86400000);
-        var h = Math.floor((diff % 86400000) / 3600000);
-        var m = Math.floor((diff % 3600000) / 60000);
-        var s = Math.floor((diff % 60000) / 1000);
-        var ds = String(d).padStart(2, '0');
-        var hs = String(h).padStart(2, '0');
-        var ms = String(m).padStart(2, '0');
-        var ss = String(s).padStart(2, '0');
-        document.getElementById('cdDays').textContent = ds;
-        document.getElementById('cdHours').textContent = hs;
-        document.getElementById('cdMins').textContent = ms;
-        document.getElementById('cdSecs').textContent = ss;
-        // 同步更新 waitlist 區塊的倒數
-        var vals = { days: ds, hours: hs, mins: ms, secs: ss };
-        Object.keys(vals).forEach(function(k) {
-          document.querySelectorAll('[data-cd="' + k + '"]').forEach(function(el) {
-            el.textContent = vals[k];
-          });
-        });
-      }
-      tick();
-      setInterval(tick, 1000);
     })();
 
     // CTA typewriter
