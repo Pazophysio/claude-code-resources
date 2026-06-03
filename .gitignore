@@ -22,3 +22,6 @@ package-lock.json
 # Local logs
 log.txt
 *.log
+
+# Image/font optimization backups (originals, kept locally only)
+**/_originals-backup/
