@@ -30,7 +30,7 @@ https://raw.githubusercontent.com/Raymondhou0917/claude-code-resources/master/st
 
 | # | 名稱 | 說明 | 難度 |
 |:--|:-----|:-----|:-----|
-| 01 | [讓對話可以往回滾](01-terminal-setup.md) | `cc` 一鍵啟動 + NO_FLICKER 模式，對話不再滾不回去 | ⭐ |
+| 01 | [讓對話可以往回滾](01-terminal-setup.md) | `cc` 一鍵啟動 + Fullscreen 模式（原 NO_FLICKER），對話不再滾不回去 | ⭐ |
 | 02 | [用編輯器寫長 Prompt](02-external-editor.md) | `Ctrl+G` 跳到熟悉的編輯器，不再跟輸入框搏鬥 | ⭐ |
 | 03 | [安全三件套](03-safe-delete.md) | 垃圾桶 + 危險指令黑名單 + 權限模式引導選擇，一次裝好 | ⭐ |
 | 04 | [MCP 推薦清單](04-mcp-essentials.md) | 讓 AI 讀信、抓網頁、操作瀏覽器、讀寫檔案（互動式選裝） | ⭐⭐ |
