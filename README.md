@@ -19,6 +19,12 @@
 - **迷你課程導覽** — 由淺入深的系列教學，每篇獨立閱讀
 - **應用案例展示** — 非工程師用 Claude Code 實際打造的工具
 
+### 🗺 AI Agent 雙棲知識地圖
+
+如果你正在比較 Claude Code 和 Codex，可以先看這張圖：它把學習路線分成「入門、活用、高手」三層，整理兩者各自優勢，以及 Context、Compact、Skills、SSOT 這些共用底層心法。
+
+![Claude Code × Codex 雙棲進化地圖](images/claude-code-codex-dual-agent-map.png)
+
 ### 🛠 Starter Kit（開源設定包）
 
 每份設定包上半給人看（為什麼需要、裝完會怎樣），下半給 AI 執行（完整指令 + 驗證）。
