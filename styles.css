@@ -3132,7 +3132,8 @@ div.course-lesson,
         .bonus-c:hover .b-title { color: #fff; }
         .bonus-c .b-desc { font-size: 0.875rem; color: rgba(244,235,225,0.55); line-height: 1.7; transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
         .bonus-c:hover .b-desc { color: rgba(255,255,255,0.9); }
-      
+        @media (max-width: 600px) { .bonus-c .b-replay { display: none; } }
+
 
 /* ===== block 5 ===== */
   #lessonLightbox {
