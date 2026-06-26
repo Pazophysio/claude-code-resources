@@ -26,14 +26,23 @@ https://raw.githubusercontent.com/Raymondhou0917/claude-code-resources/master/st
 
 ## 設定包清單
 
-### 基礎設定（建議必裝）
+> 💡 **先確認你用哪個版本**：用 [Claude Code 桌面版](https://raymondhouch.com/lifehacker/digital-workflow/claude-code-desktop-vs-terminal/)（圖形介面、新手首選）的話，下面「終端機優化」那組（01、02、06）**可以直接跳過**——它們是專門補終端機體驗的，桌面版用不到。安全設定（03）和 MCP（04）不分版本都該裝。用終端機的人三組都建議裝。
+
+### 安全與外部工具（桌面版也適用，建議必裝）
+
+| # | 名稱 | 說明 | 難度 |
+|:--|:-----|:-----|:-----|
+| 03 | [安全三件套](03-safe-delete.md) | 垃圾桶 + 危險指令黑名單 + 權限模式引導選擇，一次裝好 | ⭐ |
+| 04 | [MCP 推薦清單](04-mcp-essentials.md) | 讓 AI 讀信、抓網頁、操作瀏覽器、讀寫檔案（互動式選裝） | ⭐⭐ |
+
+### 終端機優化（桌面版可跳過）
+
+> 這三個是把終端機體驗補到接近桌面版的優化。用桌面版的話不需要，可以略過。
 
 | # | 名稱 | 說明 | 難度 |
 |:--|:-----|:-----|:-----|
 | 01 | [讓對話可以往回滾](01-terminal-setup.md) | `cc` 一鍵啟動 + Fullscreen 模式（原 NO_FLICKER），對話不再滾不回去 | ⭐ |
 | 02 | [用編輯器寫長 Prompt](02-external-editor.md) | `Ctrl+G` 跳到熟悉的編輯器，不再跟輸入框搏鬥 | ⭐ |
-| 03 | [安全三件套](03-safe-delete.md) | 垃圾桶 + 危險指令黑名單 + 權限模式引導選擇，一次裝好 | ⭐ |
-| 04 | [MCP 推薦清單](04-mcp-essentials.md) | 讓 AI 讀信、抓網頁、操作瀏覽器、讀寫檔案（互動式選裝） | ⭐⭐ |
 | 06 | [Status Line 狀態列](06-statusline.md) | 終端機顯示模型、額度、Git、最後訊息時間（互動式選裝） | ⭐ |
 
 ### 主題懶人包（Skills & 工具組合）

@@ -2,6 +2,9 @@
 
 > ⭐ 初學者友善｜3 分鐘｜macOS（其他平台見備用方案）
 
+> [!TIP]
+> **用桌面版（Claude Desktop App）的話，這篇可以跳過。** 桌面版的輸入框本來就支援多行編輯，不需要這個 `Ctrl+G` 跳外部編輯器的技巧——它是專門解決「終端機輸入框沒辦法編輯長 prompt」的痛點。不確定該用哪個？先看 [桌面版 vs 終端機完整比較](https://raymondhouch.com/lifehacker/digital-workflow/claude-code-desktop-vs-terminal/)。
+
 ## 你可能遇過這個問題
 
 用終端機使用 Claude Code 時，貼入大段文字時輸入框會顯示「[Pasted text +20 lines]」，讓你無法再編輯 prompt？如果用語音轉文字輸入時，也無法去調整修正錯字？只能送出後再按 ESC 改？這些太痛苦，怎麼辦？

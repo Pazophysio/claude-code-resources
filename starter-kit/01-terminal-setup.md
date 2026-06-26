@@ -2,6 +2,9 @@
 
 > ⭐ 初學者友善｜2 分鐘｜macOS / Linux / Windows
 
+> [!TIP]
+> **用桌面版（Claude Desktop App）的話，這篇可以跳過。** 桌面版有圖形介面、輸入框原生支援多行，不需要 `cc` 一鍵啟動、Fullscreen 模式這些終端機優化——它們是專門把終端機體驗補到接近桌面版的。不確定該用哪個？先看 [桌面版 vs 終端機完整比較](https://raymondhouch.com/lifehacker/digital-workflow/claude-code-desktop-vs-terminal/)。
+
 ## 你可能遇過這些問題
 
 用 Claude Code 的時候，你會覺得終端機很不友善：
@@ -80,6 +83,9 @@ echo $SHELL
 # 確認 settings.json 存在（不存在就先建空殼）
 [ -f ~/.claude/settings.json ] || echo '{}' > ~/.claude/settings.json
 
+# 確認 jq 已安裝（macOS 不內建，沒裝下一行會噴 command not found）
+type jq > /dev/null 2>&1 || brew install jq
+
 # 用 jq 安全合併 tui: "fullscreen"（不破壞既有設定）
 jq '. + {"tui": "fullscreen"}' ~/.claude/settings.json > ~/.claude/settings.json.tmp \
   && mv ~/.claude/settings.json.tmp ~/.claude/settings.json
@@ -88,6 +94,8 @@ jq '. + {"tui": "fullscreen"}' ~/.claude/settings.json > ~/.claude/settings.json
 grep '"tui"' ~/.claude/settings.json
 # 應顯示：  "tui": "fullscreen",
 ```
+
+> 上面用到 `jq`（macOS 不內建）。如果 `brew install jq` 回 `command not found: brew`，代表 Homebrew 還沒裝，先跑官方安裝指令再重來：`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 > [!WARNING]
 > **舊版 `CLAUDE_CODE_NO_FLICKER=1` 環境變數仍可運作，但只在「終端機 shell 直接啟動 claude」時生效。** GUI App（cmux、桌面版）走 macOS launch env，不載入你 `.zshrc` 的 alias 與 env var — 所以 env var 對 GUI 啟動完全沒用。新版正規解 = `settings.json`，一勞永逸。
